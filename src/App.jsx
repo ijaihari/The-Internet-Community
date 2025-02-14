@@ -1,9 +1,11 @@
+import Header from "./components/header";
+
 function App() {
-  return ( 
+  return (
     <div>
-      <h1>The Internet Community</h1>
+      <Header />
     </div>
-   );
+  );
 }
 
 export default App;
