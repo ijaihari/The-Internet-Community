@@ -1,11 +1,11 @@
 //import Poppins font
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Lora", serif;
+    font-family: "Oswald", serif;
 }
 
 body {
@@ -83,20 +83,51 @@ a {
     background-color: white;
     border-radius: 10px;
 }
-.article-link{
+
+.article-link {
     text-align: right;
     color: black;
-    &:hover{
-      text-decoration: underline;
+
+    &:hover {
+        text-decoration: underline;
     }
 }
-.profile{
-    border-radius: 100px;
-}
 
-//
-.user-article-container{
+
+
+// user article
+.user-article-container {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+}
+
+.user {
+    display: flex;
+    gap: 15px;
+}
+.user-name{
+    color: black;
+}
+.user-id
+{
+    margin: -5px 0px;
+    font-weight: 500;
+    color: red;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.article-title {
+    font-size: 2rem;
+}
+
+.pub-date {
+    font-size: 1rem;
+    color: grey;
+    padding-bottom: .5rem;
+}
+.article-content{
+    text-align: justify;
+    line-height:1.7;
 }
