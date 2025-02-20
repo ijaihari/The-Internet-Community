@@ -1,18 +1,13 @@
 import { Link, useParams } from "react-router-dom";
 import { userArticles } from "../data/articles";
-import { userDetails } from "../data/users";
 
 function UserArticles() {
+
     const { articleUserName } = useParams()
-    console.log(articleUserName);
-
-
 
     const SeletedArticle = userArticles.find((user) => user.username === articleUserName)
     console.log(SeletedArticle);
 
-    const ArticleAuthor = userDetails.find((user) => user.username === articleUserName);
-    console.log(ArticleAuthor);
     return (
         <div className="window">
 

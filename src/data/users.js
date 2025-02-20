@@ -21,7 +21,7 @@ export const userDetails = [
           "username": "veralysandra_writer",
           "jobRole": "Time Traveler",
           "experience": "12 years",
-          "company": "ChronoCorp",
+          "company": "ChronoCorp", 
           "profileImage": "https://example.com/veralysandra.jpg"
         },
         {
