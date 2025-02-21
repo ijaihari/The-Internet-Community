@@ -68,6 +68,7 @@ a {
     display: grid;
     grid-template-columns: 900px 1fr;
     gap: 20px;
+    
 }
 
 .article-block {
@@ -75,6 +76,7 @@ a {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.2) ;
 }
 
 .recent-articles {
@@ -82,6 +84,7 @@ a {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.2) ;
 }
 
 .o-b-link {
@@ -96,28 +99,73 @@ a {
 
 
 // user article
+.user-article {
+    display: flex;
+    gap: 10px;
+}
+
 .user-article-container {
+    width: 900px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.2) ;
+}
+
+.user-profile-container {
+    width: 340px;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.2) ;
 }
 
 .user {
     display: flex;
     gap: 15px;
 }
-.user-name{
+
+.user-name {
     color: black;
 }
-.user-id
-{
+
+.user-id {
     margin: -5px 0px;
-    font-weight: 500;
-    color: red;
-    &:hover{
+    font-weight: 400;
+    color: grey;
+
+    &:hover {
         text-decoration: underline;
     }
 }
+
+.user-details {
+    margin-top: 20px;
+}
+
+.user-details-span {
+    color: black;
+}
+
+.view-profile {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #F5F5F7;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.2) ;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover{
+       background-color: black;
+       color: white;
+    }
+}
+
 .article-title {
     font-size: 2rem;
 }
@@ -127,7 +175,18 @@ a {
     color: grey;
     padding-bottom: .5rem;
 }
-.article-content{
+
+.article-content {
     text-align: justify;
-    line-height:1.7;
+    line-height: 1.7;
+}
+
+//profile
+
+.profile-page {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: fit-content;
+    background-color: white;
 }
