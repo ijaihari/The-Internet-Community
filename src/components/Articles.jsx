@@ -11,7 +11,7 @@ function Articles() {
                    {userArticles.map((article, index)=>(<section className="article-block"key={index}>
                         <h3>{article.article.title}</h3>
                         <p>{article.article.summary}</p>
-                    <Link to={`/article/${article.username}`}><h4 className="article-link">Read more</h4></Link>
+                    <Link to={`/article/${article.username}`}><h4 className="o-b-link">Read more</h4></Link>
                     </section>)) 
                     
                     }
