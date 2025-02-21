@@ -1,4 +1,4 @@
-export const userDetails = [
+export const userDetails = 
     [
         {
           "name": "Kai Thorne",
@@ -82,4 +82,3 @@ export const userDetails = [
         }
       ]
       
-]
