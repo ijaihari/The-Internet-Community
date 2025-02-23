@@ -10,6 +10,7 @@ function Profile() {
     console.log(profileUser);
 
     return (
+        
         <div className="profile-page window">
             <section >
                 <section className="user">
