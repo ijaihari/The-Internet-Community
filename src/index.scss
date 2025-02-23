@@ -22,15 +22,15 @@ a {
     margin-left: 80px;
 }
 
-.header {
-    height: 55px;
+.header { 
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    right: 0;
 }
 
 .nav-list {
@@ -57,7 +57,7 @@ a {
 
 // Articles
 .window {
-    margin: 20px 100px 10px 100px;
+    margin: 80px 100px 10px 100px;
 }
 
 .pg-title {
@@ -74,38 +74,59 @@ a {
 
 }
 
-.category-container {
+/* .category-container {
+    position: relative;
+} */
+.category-sticky{
+    position: sticky;
+    top: 80px;
+    left: 0px;
     height: fit-content;
     background-color: white;
     padding: 5px 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.2);
+}.category-title{
+    text-align: center;color: black;
+    border-radius: 10px;
 }
-.category-sticky{
-    position: sticky;
-    top: 0px;
-    left:0px
+hr{
+    margin-top:5px ;
+    border-radius: 100px;
+    border: 1px dotted grey;
 }
 li {
     list-style-type: none;
 }
 
+.cat-tag{
+    font-size: .7rem;
+    border: 1px solid red;
+    color: red;
+    padding: 1px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.1);
+}
 .cat-list button {
+    background-color: white;
     width: 100%;
     font-size:1.1rem ;
     color: black;
     border-radius: 5px;
     margin: 5px 0px;
-    background-color: white;
     border: none;
     text-align: left;
     padding: 5px 20px;
     cursor: pointer;
 
     &:hover {
-        background-color: rgba(128, 128, 128, 0.2);
+        background-color: black;
+        color: white;
     }
 
+}
+.art-summary{
+    margin-bottom: 10px;
 }
 
 .article-block {
@@ -225,6 +246,7 @@ li {
 .article-content {
     text-align: justify;
     line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 //profile

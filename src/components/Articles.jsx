@@ -5,11 +5,11 @@ function Articles() {
 
     return (
         <div className="window">
-            <h1 className="pg-title">Articles</h1>
             <div className="art-container">
                 <section className="category-container">
                     <section className="category-sticky">
-                        <h2 className="category-title">Category</h2>
+                        <h2 className="category-title">CATEGORY</h2>
+                        <hr />
                         <ul>
                             <li class="cat-list"><button onclick="">All</button></li>
                             <li class="cat-list"><button onclick="">Technology</button></li>
@@ -29,8 +29,8 @@ function Articles() {
                     {userArticles.map((article, index) => (<section className="article-block" key={index}>
                         <h3>{article.article.title}</h3>
                         <p className="pub-date">Published date: {article.article.date}</p>
-                        <p>{article.article.summary}</p>
-                        <span><p>#Science</p></span>
+                        <p className="art-summary">{article.article.summary}</p>
+                        <span className="cat-tag" >{`#${article.article.catergory}`}</span>
                         <Link to={`/article/${article.username}`}><button className="art-open-link">Read full article</button></Link>
                     </section>))
                     }
