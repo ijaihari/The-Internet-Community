@@ -10,7 +10,7 @@ function Header() {
                 <ul className="nav-list">
                     <li><Link to={'/'}>Home</Link></li>
                     <li><Link to={'/pages'}>Pages</Link></li>
-                    <li><Link to={'/article'}>Article</Link></li>
+                    <li><Link to={'/article'}>Articles</Link></li>
                     <li><Link to={'/about'}>About</Link></li>
                     <li><Link to={'/account'}>Dashboard</Link></li>
                 </ul>

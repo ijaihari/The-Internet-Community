@@ -30,7 +30,8 @@ function Articles() {
                         <h3>{article.article.title}</h3>
                         <p className="pub-date">Published date: {article.article.date}</p>
                         <p>{article.article.summary}</p>
-                        <Link to={`/article/${article.username}`}><h4 className="o-b-link">Read full article</h4></Link>
+                        <span><p>#Science</p></span>
+                        <Link to={`/article/${article.username}`}><button className="art-open-link">Read full article</button></Link>
                     </section>))
                     }
                 </section>

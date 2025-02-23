@@ -18,7 +18,7 @@ function UserArticles() {
                 <h1 className="article-title">{SeletedArticle.article.title}</h1>
                 <p className="pub-date">Published date: {SeletedArticle.article.date}</p>
                 <p className="article-content">{SeletedArticle.article.content}</p>
-                <Link to={"/article"}><h4 className="o-b-link">Back to articles</h4></Link>
+                <Link to={"/article"}><button className="art-back-link">Back to articles</button></Link>
             </article>
             <article className="user-profile-container">
                 <section className="user">

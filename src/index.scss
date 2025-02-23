@@ -77,7 +77,7 @@ a {
 .category-container {
     height: fit-content;
     background-color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.2);
 }
@@ -109,6 +109,7 @@ li {
 }
 
 .article-block {
+    position: relative;
     margin-bottom: 10px;
     padding: 20px;
     background-color: white;
@@ -124,12 +125,19 @@ li {
     box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.2);
 }
 
-.o-b-link {
-    text-align: right;
+.art-open-link, .art-back-link {
+    position: absolute;
+    bottom: 10px;right:10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
     color: black;
+    background-color: #F5F5F7;
+    border: 2px solid rgba(128, 128, 128, 0.2);
 
     &:hover {
-        text-decoration: underline;
+       background-color: black;
+       color: white;
     }
 }
 
@@ -142,6 +150,7 @@ li {
 }
 
 .user-article-container {
+    position: relative;
     width: 900px;
     padding: 20px;
     background-color: white;
