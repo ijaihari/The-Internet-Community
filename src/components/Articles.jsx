@@ -8,7 +8,7 @@ function Articles() {
             <div className="art-container">
                 <section className="category-container">
                     <section className="category-sticky">
-                        <h2 className="category-title">CATEGORY</h2>
+                        <h2 className="category-title">Category</h2>
                         <hr />
                         <ul>
                             <li class="cat-list"><button onclick="">All</button></li>

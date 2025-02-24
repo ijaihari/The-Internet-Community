@@ -25,7 +25,7 @@ function UserArticles() {
                     <img className="user-image" src={ArticleUser.profileImage} alt="" width={50} />
                     <section className="u">
                         <h3 className="user-name">{ArticleUser.name}</h3>
-                        <Link to={`/profile/${ArticleUser.username}`}><p className="user-id">{ArticleUser.username}</p></Link>
+                        <Link to={`/profile/${ArticleUser.username}`}><p className="user-id">{`@${ArticleUser.username}`}</p></Link>
                     </section>
                 </section>
                 <section className="user-details">
