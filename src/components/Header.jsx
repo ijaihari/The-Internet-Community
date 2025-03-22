@@ -5,7 +5,7 @@ function Header() {
         <div className="head">
             <header className="header">
                 <Link to={'/'}>
-                    <img className="logo" src="src\assets\brand\TICOM -black.svg" alt="The Internet Community" />
+                    <img className="logo" src="assets\brand\TICOM -black.svg" alt="The Internet Community" />
                 </Link>
                 <ul className="nav-list">
                     <li><Link to={'/'}>Home</Link></li>
