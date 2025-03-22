@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router";
 import Header from "./components/Header";
 import HomePage from "./components/Home";
 import UserArticles from "./components/User-Articles";
-import Articles from "./components/articles";
+import Articles from "./components/Articles";
 import Profile from "./components/Profile";
 
 function App() {
