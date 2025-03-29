@@ -15,7 +15,7 @@ function App() {
         <Route path='/article/:articleUserName' element={<UserArticles />} />
         <Route path="/profile/:profileId" element={<Profile />} />
       </Routes>
-    </div>
+    </div> 
   );
 }
 
